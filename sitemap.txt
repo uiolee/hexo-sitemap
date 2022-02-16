@@ -1,0 +1,6 @@
+{{ config.url | uriencode }}
+{% for post in posts %}{{ post.permalink | uriencode }}
+{% endfor %}{% for tag in tags %}{{ tag.permalink | uriencode }}
+{% endfor %}{% for cat in categories %}{{ cat.permalink | uriencode }}
+{% endfor %}{% for inlude in includeList %}{{ inlude | uriencode }}
+{% endfor %}
